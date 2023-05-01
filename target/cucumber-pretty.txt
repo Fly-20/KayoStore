@@ -1,10 +1,5 @@
 Feature: 
-    As a user
-    I want to be able to add new clients in the system
-    So that I can add accounting data for that client
 
   @scenario1
-  Scenario Outline: AddToCart journey homepage section1   # website.feature:12
-    Given I open the kayo url and select the "<p>" option
-
-    Examples: 
+  Scenario: AddToCart journey homepage section1         # website.feature:8
+    Given I open the kayo url and select the "1" option # StepDefinition.iOpenTheKayoUrlAndSelectTheOption(String)

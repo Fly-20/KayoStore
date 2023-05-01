@@ -176,9 +176,9 @@ public class StepDefinition {
             phone.sendKeys("0");
             firstContinue.click();
             Thread.sleep(3000);
-            WebElement secondContinue = driver.findElement(By.id("continue_button"));
-            Thread.sleep(3000);
-            secondContinue.click();
+//            WebElement secondContinue = driver.findElement(By.id("continue_button"));
+//            Thread.sleep(3000);
+//            secondContinue.click();
         }
         finally {
             driver.close();

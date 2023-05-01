@@ -1,0 +1,20 @@
+[
+  {
+    "source": "^I open the kayo url and select the \"([^\"]*)\" option$",
+    "steps": [
+      {
+        "name": "I open the kayo url and select the \"1\" option",
+        "aggregatedDurations": {
+          "average": 37.502863,
+          "median": 37.502863
+        },
+        "durations": [
+          {
+            "duration": 37.502863,
+            "location": "website.feature:9"
+          }
+        ]
+      }
+    ]
+  }
+]

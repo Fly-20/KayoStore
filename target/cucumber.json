@@ -1,0 +1,46 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 8,
+        "name": "AddToCart journey homepage section1",
+        "description": "",
+        "id": ";addtocart-journey-homepage-section1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 37502863000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I open the kayo url and select the \"1\" option",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinition.iOpenTheKayoUrlAndSelectTheOption(String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@scenario1"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "website.feature"
+  }
+]
