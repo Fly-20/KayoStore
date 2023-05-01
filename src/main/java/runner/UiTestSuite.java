@@ -11,8 +11,8 @@ import cucumber.api.junit.Cucumber;
         glue="com.Multi",
         plugin={"html:target/cucumber-html-report", "json:target/cucumber.json",
                 "pretty:target/cucumber-pretty.txt","usage:target/cucumber-usage.json",
-                "junit:target/cucumber-results.xml"},
-        tags={"@scenario1"}
+                "junit:target/cucumber-results.xml"}
+//        , tags={"@scenario1"}
 )
 
 public class UiTestSuite {
