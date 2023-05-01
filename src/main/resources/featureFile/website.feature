@@ -10,7 +10,8 @@ Feature:
         When I key details
     @scenario1
     Scenario Outline: AddToCart journey homepage section1
-        Given I open the kayo url and select the "<pack>" option
+        Given I open the kayo url and select the "<p>" option
         Examples:
-            | pack |
-            | 1    |
+            | p |
+            | 1 |
+            | 3 |

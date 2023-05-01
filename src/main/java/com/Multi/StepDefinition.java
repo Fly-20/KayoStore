@@ -140,7 +140,7 @@ public class StepDefinition {
             Thread.sleep(4000);
             WebElement option = null;
             Thread.sleep(4000);
-
+            System.out.println("NIDHI"+ pack);
 //            if (pack.equals("1"))
 //                option = driver.findElement(By.id("template--15804721791159__abf68713-255b-42d1-9221-f1f79d68561a-1-0"));
 //            if (pack.equals("3"))
