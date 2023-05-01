@@ -9,8 +9,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
         features="src/test/resources/featureFile",
         glue="com.Multi",
-        monochrome = true,
-        format={"json:target/Destination/cucumber.json"},
+        plugin={"html:target/cucumber-html-report", "json:target/cucumber.json",
+                "pretty:target/cucumber-pretty.txt","usage:target/cucumber-usage.json",
+                "junit:target/cucumber-results.xml"},
         tags={"@scenario1"}
 )
 
