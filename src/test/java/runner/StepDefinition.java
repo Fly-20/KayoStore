@@ -1,20 +1,23 @@
-package com.Multi;
+package runner;
 
 import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 
 public class StepDefinition {
-
+    ChromeDriver driver = null;
     @Given("^I open the kayo url and select the \"([^\"]*)\" option$")
     public void iOpenTheKayoUrlAndSelectTheOption(String pack) throws Throwable {
         System.setProperty("webdriver.chrome.driver",
                 "src\\test\\resources\\executables\\chromedriver.exe");
-        ChromeDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless", "--disable-extensions");
+        driver = new ChromeDriver(options);
+
         try {
             String site = "https://shop.kayoauto.com";
             driver.navigate().to(site);
@@ -58,6 +61,7 @@ public class StepDefinition {
             WebElement zipCode = driver.findElement(By.id("checkout_shipping_address_zip"));
             WebElement phone = driver.findElement(By.id("checkout_shipping_address_phone"));
             WebElement firstContinue = driver.findElement(By.id("continue_button"));
+            Thread.sleep(4000);
 
             email.sendKeys("dev@fly-20.com");
             firstName.sendKeys("TestFirst Name");

@@ -6,6 +6,10 @@ Feature:
 
 
     @scenario1
-    Scenario: AddToCart journey homepage section1
-        Given I open the kayo url and select the "1" option
-
+    Scenario Outline: : AddToCart journey homepage section1
+        Given I open the kayo url and select the "<p>" option
+        Examples:
+            | p |
+            | 1 |
+            | 3 |
+            | 4 |
