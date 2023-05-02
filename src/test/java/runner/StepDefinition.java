@@ -41,37 +41,37 @@ public class StepDefinition {
 
             WebElement element = driver.findElement(By.id("websitetest"));
             Thread.sleep(4000);
-
-            JavascriptExecutor js = driver;
-            js.executeScript("arguments[0].click();", element);
-            Thread.sleep(4000);
-            WebElement webElement = driver.findElement(By.xpath("//button[@id = 'CartDrawer-Checkout']"));
-            System.out.println("DDD" + webElement.getText());
-                        Thread.sleep(4000);
-
-            Actions actions = new Actions(driver);
-            actions.moveToElement(webElement).click().build().perform();
-            Thread.sleep(4000);
-            System.out.println("Passed Leve 2");
-            WebElement email = driver.findElement(By.id("checkout_email"));
-            WebElement firstName = driver.findElement(By.id("checkout_shipping_address_first_name"));
-            WebElement lastName = driver.findElement(By.id("checkout_shipping_address_last_name"));
-            WebElement address = driver.findElement(By.id("checkout_shipping_address_address1"));
-            WebElement city = driver.findElement(By.id("checkout_shipping_address_city"));
-            WebElement zipCode = driver.findElement(By.id("checkout_shipping_address_zip"));
-            WebElement phone = driver.findElement(By.id("checkout_shipping_address_phone"));
-            WebElement firstContinue = driver.findElement(By.id("continue_button"));
-            Thread.sleep(4000);
-
-            email.sendKeys("dev@fly-20.com");
-            firstName.sendKeys("TestFirst Name");
-            lastName.sendKeys("LastName");
-            address.sendKeys("123 William Street");
-            city.sendKeys("New York");
-            zipCode.sendKeys("10038");
-            phone.sendKeys("0");
-            firstContinue.click();
-            Thread.sleep(3000);
+//
+//            JavascriptExecutor js = driver;
+//            js.executeScript("arguments[0].click();", element);
+//            Thread.sleep(4000);
+//            WebElement webElement = driver.findElement(By.xpath("//button[@id = 'CartDrawer-Checkout']"));
+//            System.out.println("DDD" + webElement.getText());
+//                        Thread.sleep(4000);
+//
+//            Actions actions = new Actions(driver);
+//            actions.moveToElement(webElement).click().build().perform();
+//            Thread.sleep(4000);
+//            System.out.println("Passed Leve 2");
+//            WebElement email = driver.findElement(By.id("checkout_email"));
+//            WebElement firstName = driver.findElement(By.id("checkout_shipping_address_first_name"));
+//            WebElement lastName = driver.findElement(By.id("checkout_shipping_address_last_name"));
+//            WebElement address = driver.findElement(By.id("checkout_shipping_address_address1"));
+//            WebElement city = driver.findElement(By.id("checkout_shipping_address_city"));
+//            WebElement zipCode = driver.findElement(By.id("checkout_shipping_address_zip"));
+//            WebElement phone = driver.findElement(By.id("checkout_shipping_address_phone"));
+//            WebElement firstContinue = driver.findElement(By.id("continue_button"));
+//            Thread.sleep(4000);
+//
+//            email.sendKeys("dev@fly-20.com");
+//            firstName.sendKeys("TestFirst Name");
+//            lastName.sendKeys("LastName");
+//            address.sendKeys("123 William Street");
+//            city.sendKeys("New York");
+//            zipCode.sendKeys("10038");
+//            phone.sendKeys("0");
+//            firstContinue.click();
+//            Thread.sleep(3000);
         }
         finally {
             driver.close();
